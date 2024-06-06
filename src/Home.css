@@ -1,0 +1,154 @@
+/* Home.css */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* 将搜索框向左对齐 */
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px; /* 给输入框和按钮之间添加一些间距 */
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004158;
+    padding: 10px 20px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a, .contact a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero, .options, .footer {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #50E3C2;
+    color: black;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-icon {
+    font-size: 60px;
+    position: absolute;
+    top:250px;
+    right: 700px; /* 距离右边界 10 像素 */
+    transform: translateY(-50%); /* 垂直居中 */
+
+}
+
+.options {
+    background-color: #FFF6DD;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    height: 170px; /* 设置父元素的高度 */
+}
+
+p:hover {
+    color: blue;
+}
+
+
+.option {
+    font-size: 30px;
+    background-color: #FFE8A1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit; /* 继承父元素的宽度 */
+    height: inherit; /* 继承父元素的高度 */
+}
+
+
+
+
+.option-icon {
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.footer {
+    background-color: #F5AFC1;
+    padding: 20px;
+    color: black;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-links, .footer-social {
+    width: 100%; /* 让子元素占据整个宽度 */
+    margin: 10px 0;
+}
+
+.footer-links p, .footer-social p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer-links a, .footer-social a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: center; /* 水平居中 */
+}
+

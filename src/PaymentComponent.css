@@ -1,0 +1,96 @@
+/* PaymentComponent.css */
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* 占满整个视口高度 */
+    margin: 0; /* 确保没有外边距 */
+    padding: 0; /* 确保没有内边距 */
+    justify-content: space-between; /* 左右两侧对齐 */
+}
+
+.left-container {
+    width: 500px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #f0f0f0; /* 灰色背景 */
+    height: 100%; /* 占据父元素高度 */
+}
+
+.right-container {
+    padding-right: 650px;
+    padding-bottom: 1000px;
+    box-sizing: border-box; /* 确保内边距不会影响宽度计算 */
+    height: 100%; /* 占据父元素高度 */
+    background-color: #fff; /* 白色背景 */
+    display: flex;
+    justify-content: right; /* 在右侧容器中水平居中 */
+    align-items: right; /* 在右侧容器中垂直居中 */
+    line-height: 2; /* 设置行间距为字体大小的1.5倍 */
+
+}
+.subscription-details {
+    line-height: 1.5; /* 将行间距调整为 1.5 倍 */
+}
+
+
+.subscription-details h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.subscription-details h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.subscription-details strong {
+    font-size: 1.5em; /* 修改字体大小为 1.2em */
+}
+
+.subscription-details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #777;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+}
+
+.subscribe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscribe-button:hover {
+    background-color: #218838;
+}
